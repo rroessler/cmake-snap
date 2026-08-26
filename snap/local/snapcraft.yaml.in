@@ -8,8 +8,7 @@ description: |
   and workspaces that can be used in the compiler environment of
   your choice.
 
-  This snap is maintained separately from the CMake project by one
-  of the CMake co-maintainers.
+  This snap is maintained separately from the CMake project.
 
 license: BSD-3-Clause
 title: CMake
@@ -17,7 +16,6 @@ version: @CMAKE_VERSION@
 icon: snap/gui/CMake_Logo.png
 website: https://cmake.org
 issues: https://gitlab.kitware.com/cmake/cmake/issues
-contact: https://crascit.com/contact
 
 confinement: classic
 grade: stable
