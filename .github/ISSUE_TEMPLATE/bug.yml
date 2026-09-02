@@ -1,0 +1,66 @@
+name: Bug report
+description: File a bug report
+labels: "bug"
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for taking the time to fill out this bug report! Before
+        submitting your issue, make sure this has not been already
+        reported or if it works with the latest published version
+        of the CMake snap.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Pre-Flight Checklist
+      description: "Before submitting this issue, please confirm the following:"
+      options:
+        - label: I have updated this package to the **latest version**.
+        - label: I have searched existing issues to ensure that this hasn't been reported yet.
+        - label: I have verified this issue is **specific to this snap** and not upstream CMake.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: >
+        If applicable, add screenshots to help explain your problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction Steps
+      description: >
+        Provide a step-by-step instruction on how to reproduce the behavior.
+
+  - type: textarea
+    id: environment
+    attributes:
+      render: shell
+      label: Environment Information
+      description: >
+        Kindly copy **all** the commands below, run them in your terminal,
+        and share the results here.
+          ```bash
+            echo -e "\nSnap Information:"
+            snap list cmake snapd
+
+            echo -e "\nAppArmor version:"
+            apparmor_parser --version
+
+            echo -e "\nOS release:"
+            cat /etc/os-release
+
+            echo -e "\nKernel and architecture:"
+            uname -rvm
+          ```
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Additional Information
+      description: >
+        Provide any additional information, including relevant logs.
