@@ -1,4 +1,4 @@
-name: Bug report
+name: Bug Report
 description: File a bug report
 labels: "bug"
 body:
@@ -26,8 +26,8 @@ body:
       label: Bug Description
       description: >
         If applicable, add screenshots to help explain your problem.
-    validations:
-      required: true
+      validations:
+        required: true
 
   - type: textarea
     id: reproduction
