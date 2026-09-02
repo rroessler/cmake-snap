@@ -1,4 +1,5 @@
 name: cmake
+version: @CMAKE_VERSION@
 summary: "Cross-platform software build system generator"
 description: |
   CMake is an open-source, cross-platform family of tools designed
@@ -10,17 +11,20 @@ description: |
 
   This snap is maintained separately from the CMake project.
 
-license: BSD-3-Clause
 title: CMake
-version: @CMAKE_VERSION@
+license: BSD-3-Clause
 icon: snap/gui/CMake_Logo.png
 website: https://cmake.org
-issues: https://gitlab.kitware.com/cmake/cmake/issues
-
-confinement: classic
-grade: stable
+issues: 
+  - https://gitlab.kitware.com/cmake/cmake/issues
+  - https://github.com/rroessler/cmake-snap/issues
+source-code:
+  - https://gitlab.kitware.com/cmake
+  - https://github.com/rroessler/cmake-snap
 
 base: core24
+grade: stable
+confinement: classic
 
 platforms:
   amd64:
